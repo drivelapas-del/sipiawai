@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>SIPIAWAI</title>
+
+  <!-- Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADING -->
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Memuat aplikasi SIPIAWAI...</p>
+  </div>
+
+  <!-- ERROR -->
+  <div id="error" class="error hidden">
+    <h2>⚠️ Koneksi Bermasalah</h2>
+    <p>
+      Aplikasi tidak dapat dimuat.<br>
+      Periksa koneksi internet atau coba beberapa saat lagi.
+    </p>
+    <button onclick="location.reload()">🔄 Muat Ulang</button>
+  </div>
+
+  <!-- IFRAME -->
+  <iframe
+    id="appFrame"
+    src="https://script.google.com/macros/s/AKfycby4dzGvzGTGNSdM-em7qM6MYTTBR-xWcKXQYzeAVxdxMCUzY5VM8V0s3AD_r3jrTSY8oA/exec"
+    title="Aplikasi SIPIAWAI"
+    loading="eager"
+  ></iframe>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
